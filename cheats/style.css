@@ -281,10 +281,10 @@ form button:hover {
   background-color: #000;
   color: #00ff00;
 }
-/* General button styling for consistency */
+
 button {
-  background-color: #00ff00; /* Bright green */
-  color: #000; /* Black text */
+  background-color: #00ff00; 
+  color: #000; 
   border: none;
   padding: 0.5rem 1rem;
   border-radius: 4px;
@@ -292,18 +292,16 @@ button {
   font-weight: bold;
 }
 
-/* Hover effect for all buttons */
 button:hover {
-  background-color: #005f00; /* Darker green for hover */
-  color: #00ff00; /* Green text on hover */
+  background-color: #005f00; 
+  color: #00ff00;
 }
 
-/* Specific styles for redirect buttons */
 .redirect-btn {
   width: 100%;
   margin: 0.5rem 0;
-  background-color: #001f00; /* Greenish-black */
-  color: #00ff00; /* Bright green text */
+  background-color: #001f00; 
+  color: #00ff00; 
   font-size: 1rem;
   padding: 0.7rem;
   text-align: center;
@@ -311,6 +309,6 @@ button:hover {
 }
 
 .redirect-btn:hover {
-  background-color: #005f00; /* Darker green */
-  color: #fff; /* White text on hover for contrast */
+  background-color: #005f00; 
+  color: #fff; 
 }
