@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Entropy Cheats Explorer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Entropy Cheats Explorer</h1>
+    <nav>
+      <button id="submit-btn">Submit Cheat</button>
+      <button id="more-btn">More</button>
+    </nav>
+  </header>
+  <main>
+    <!-- Cheats List Section -->
+    <section id="cheats-list">
+      <h2>Cheat Codes</h2>
+      <!-- Search and Sort Options -->
+      <div id="controls">
+        <input type="text" id="search-field" placeholder="Search cheats...">
+        <select id="sort-options">
+          <option value="newest">Newest</option>
+          <option value="alphabetically">Alphabetically</option>
+        </select>
+      </div>
+      <ul id="cheats"></ul>
+    </section>
+
+    <!-- Submit Form Section -->
+    <section id="form-section" class="hidden">
+      <div class="form-container">
+        <h2>Submit Your Cheat</h2>
+        <h3>Help us grow our community by submitting your favorite commands / scripts as easy-to-run aliases!</h3>
+        <b>Each submission will be manually verified and checked for viruses, legality, etc. If a submission passes verification, it is then added to the main database and made available to everyone with the `cheats` command.</b>
+        
+        <!-- Separator Line -->
+        <hr style="border: 1px solid #00ff00; margin: 1.5rem 0;">
+
+        <form id="submit-form">
+          <label for="cheat-code"><h3>Cheat Code</h3></label>
+          <input type="text" id="cheat-code" placeholder="Enter cheat code" required>
+          
+          <label for="cheat-command"><h4>Command</h4></label>
+          <textarea id="cheat-command" placeholder="Enter command" required></textarea>
+          
+          <label for="cheat-desc"><h4>Description</h4></label>
+          <textarea id="cheat-desc" placeholder="Enter description" required></textarea>
+          
+          <button type="button" id="send-btn">Send</button>
+          <button type="button" id="copy-btn">Copy</button>
+          <button type="button" id="cancel-btn">Cancel</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- More Info Section -->
+    <section id="more-section" class="hidden">
+      <div class="form-container">
+        <h2>About project...</h2>
+        <h3>Cheats for Entropy Linux, a community driven, shell alias interpreter.</h3>
+        <p></p>
+        
+        <button class="redirect-btn" onclick="window.location.href='https://sourceforge.net/projects/entropy-linux/';">Entropy Linux</button>
+        <button class="redirect-btn" onclick="window.location.href='https://github.com/Szmelc-INC/Cheats/';">Source Code & Manual</button>
+        
+        <button type="button" id="more-cancel-btn">Close</button>
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
