@@ -102,7 +102,7 @@ sendBtn.addEventListener("click", () => {
   const body = encodeURIComponent(
     `Cheat Code:\n${code}\n\nCommand:\n${command}\n\nDescription:\n${desc}`
   );
-  const mailto = `mailto:your-email@example.com?subject=${subject}&body=${body}`;
+  const mailto = `mailto:szmelcinc@gmail.com?subject=${subject}&body=${body}`;
 
   // Open email client with the constructed mailto link
   window.location.href = mailto;
